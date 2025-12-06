@@ -11,7 +11,7 @@
   - name: sh
     platform: linux
     command: './snap7_cli -a #{snap7.ip} -p #{snap7.port} --db_number #{snap7.db_number}
-      fuzz #{snap7.fuzz.start} #{snap7.fuzz.end} #{snap7.fuzz.count} --wait #{snap7.fuzz.wait} 2>&1'
+      fuzz #{snap7.fuzz.start} #{snap7.fuzz.end} --count #{snap7.fuzz.count} --wait #{snap7.fuzz.wait} 2>&1'
     code: null
     language: null
     build_target: null
@@ -26,7 +26,7 @@
   - name: psh
     platform: windows
     command: './snap7_cli.exe -a #{snap7.ip} -p #{snap7.port} --db_number #{snap7.db_number}
-      fuzz #{snap7.fuzz.start} #{snap7.fuzz.end} #{snap7.fuzz.count} --wait #{snap7.fuzz.wait}'
+      fuzz #{snap7.fuzz.start} #{snap7.fuzz.end} --count #{snap7.fuzz.count} --wait #{snap7.fuzz.wait}'
     code: null
     language: null
     build_target: null
