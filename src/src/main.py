@@ -82,8 +82,8 @@ def create_arg_parser():
         "-p", "--port",
         type=int,
         dest="port",
-        default=502,
-        help="The target device S7 port (default: 502)"
+        default=102,
+        help="The target device S7 port (default: 102)"
     )
     parser.add_argument(
         "-r", "--rack", 
